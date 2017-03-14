@@ -26,6 +26,17 @@ img {
     width: 80px;
     height: 80px;
 }
+.clearfix:after {
+    content: ".";
+    height: 0;
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
 
 /*
   main style
@@ -47,9 +58,7 @@ img {
 
 #right-aside {
     width: 120px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    float: right;
 }
 #main-content {
     margin-left: 220px;
